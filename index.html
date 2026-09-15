@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="UTF-8">
@@ -12,41 +11,14 @@
 
   <title>Vocal Notes</title>
 
+  <!-- iPhone App Settings -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Vocal Notes">
+  <meta name="application-name" content="Vocal Notes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
 
-  <!-- ==========================================
-       IPHONE APP SETTINGS
-  ========================================== -->
-
-  <meta
-    name="apple-mobile-web-app-capable"
-    content="yes"
-  >
-
-  <meta
-    name="mobile-web-app-capable"
-    content="yes"
-  >
-
-  <meta
-    name="apple-mobile-web-app-title"
-    content="Vocal Notes"
-  >
-
-  <meta
-    name="application-name"
-    content="Vocal Notes"
-  >
-
-  <meta
-    name="apple-mobile-web-app-status-bar-style"
-    content="black-translucent"
-  >
-
-
-  <!-- ==========================================
-       APP ICON
-  ========================================== -->
-
+  <!-- Custom Icon -->
   <link
     rel="apple-touch-icon"
     sizes="180x180"
@@ -59,270 +31,35 @@
     href="https://static.wixstatic.com/media/8384d6_f90c9479b02d465394468fb7d2b3b2ef~mv2.png"
   >
 
-
-  <!-- ==========================================
-       DESIGN
-  ========================================== -->
-
   <style>
-
-    :root {
-      --navy: #18324A;
-      --blue: #527C9B;
-      --light-blue: #EAF0F4;
-      --cream: #F7F5F0;
-      --white: #FFFFFF;
-      --text: #24313A;
-      --muted: #6F7C84;
-    }
-
-
-    * {
-      box-sizing: border-box;
-      -webkit-tap-highlight-color: transparent;
-    }
-
 
     html,
     body {
-
+      width: 100%;
+      height: 100%;
       margin: 0;
       padding: 0;
+      overflow: hidden;
+      background: #F7F5F0;
+    }
 
+    iframe {
+      display: block;
       width: 100%;
-      min-height: 100%;
-
-      background: var(--cream);
-
-      font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-      color: var(--text);
-
-    }
-
-
-    body {
-
-      min-height: 100vh;
-
-      display: flex;
-
-      align-items: center;
-      justify-content: center;
-
-      padding:
-        calc(30px + env(safe-area-inset-top))
-        24px
-        calc(30px + env(safe-area-inset-bottom));
-
-    }
-
-
-    .container {
-
-      width: 100%;
-      max-width: 380px;
-
-      text-align: center;
-
-    }
-
-
-    .icon {
-
-      width: 115px;
-      height: 115px;
-
-      border-radius: 25px;
-
-      object-fit: cover;
-
-      box-shadow:
-        0 8px 25px
-        rgba(24, 50, 74, .15);
-
-      margin-bottom: 25px;
-
-    }
-
-
-    .brand {
-
-      color: var(--blue);
-
-      font-size: 11px;
-      font-weight: 700;
-
-      letter-spacing: 3px;
-
-      text-transform: uppercase;
-
-      margin-bottom: 8px;
-
-    }
-
-
-    h1 {
-
-      margin:
-        0 0 10px;
-
-      color:
-        var(--navy);
-
-      font-size:
-        32px;
-
-      line-height:
-        1.1;
-
-    }
-
-
-    .description {
-
-      margin:
-        0 auto 28px;
-
-      max-width:
-        290px;
-
-      color:
-        var(--muted);
-
-      font-size:
-        14px;
-
-      line-height:
-        1.5;
-
-    }
-
-
-    .open-button {
-
-      display: flex;
-
-      width: 100%;
-      height: 56px;
-
-      align-items: center;
-      justify-content: center;
-
-      background:
-        var(--navy);
-
-      color:
-        var(--white);
-
-      text-decoration:
-        none;
-
-      border-radius:
-        14px;
-
-      font-size:
-        14px;
-
-      font-weight:
-        700;
-
-      letter-spacing:
-        1px;
-
-      box-shadow:
-        0 5px 15px
-        rgba(24, 50, 74, .18);
-
-    }
-
-
-    .open-button:active {
-
-      transform:
-        scale(.99);
-
-    }
-
-
-    .footer {
-
-      margin-top:
-        25px;
-
-      color:
-        var(--muted);
-
-      font-size:
-        10px;
-
-      letter-spacing:
-        1px;
-
+      height: 100%;
+      border: 0;
     }
 
   </style>
 
 </head>
 
-
 <body>
 
-
-  <main class="container">
-
-
-    <img
-      class="icon"
-      src="https://static.wixstatic.com/media/8384d6_f90c9479b02d465394468fb7d2b3b2ef~mv2.png"
-      alt="Vocal Notes"
-    >
-
-
-    <div class="brand">
-
-      Southland Worship
-
-    </div>
-
-
-    <h1>
-
-      Vocal Notes
-
-    </h1>
-
-
-    <p class="description">
-
-      Build and send Southland Worship vocal notes.
-
-    </p>
-
-
-    <a
-      class="open-button"
-      href="https://script.google.com/macros/s/AKfycbya1ZmGk4_wY5yLFMfCvPVAPoNmNYk80ht564I9N-yaWdofukaHieUAZv8vXX5PFY9j/exec"
-    >
-
-      OPEN VOCAL NOTES
-
-    </a>
-
-
-    <div class="footer">
-
-      SOUTHLAND COMMUNITY CHURCH
-
-    </div>
-
-
-  </main>
-
+  <iframe
+    src="https://script.google.com/macros/s/AKfycbya1ZmGk4_wY5yLFMfCvPVAPoNmNYk80ht564I9N-yaWdofukaHieUAZv8vXX5PFY9j/exec"
+    title="Southland Worship Vocal Notes"
+  ></iframe>
 
 </body>
-
 </html>
