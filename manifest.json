@@ -1,0 +1,17 @@
+{
+  "name": "Southland Worship Vocal Notes",
+  "short_name": "Vocal Notes",
+  "start_url": "/vocal-notes/",
+  "scope": "/vocal-notes/",
+  "display": "standalone",
+  "background_color": "#F7F5F0",
+  "theme_color": "#18324A",
+  "icons": [
+    {
+      "src": "/vocal-notes/vocal-notes-icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
